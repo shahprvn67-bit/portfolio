@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaheen | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-title">Shaheen Parveen</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+<main class="container">
+  <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Languages & Tech</h3>
+          <p>HTML, CSS, JavaScript,C, C++ , Java.</p>
+        </div>
+        <div class="card">
+          <h3>Tools & Workflow</h3>
+          <p>VS Code, Responsive Design and WordPress.</p>
+        </div>
+      </div>
+    </section>
+</main>
+<footer>
+    © <span id="year"></span> Shaheen Parveen. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

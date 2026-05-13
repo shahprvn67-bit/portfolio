@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaheen | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-title">Shaheen Parveen</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+<main class="container">
+<section id="about">
+      <h2>About</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>
+            Web Developer skilled in HTML, CSS, and modern responsive layouts. Currently learning advanced JavaScript frameworks and CSS preprocessors to enhance front-end development. Seeking freelance projects or remote opportunities to build dynamic websites and user-focused web applications.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            Passionate about tools like VS Code, Git, and Figma for efficient coding and design workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+</main>
+<footer>
+    © <span id="year"></span> Shaheen Parveen. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaheen | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-title">Shaheen Parveen</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div>
+        <h1>Hi, I'm Shaheen</h1>
+
+        <h2><span id="element"></span></h2>
+
+        <p>
+          I build clean, responsive websites and web apps using modern HTML, CSS, and JavaScript.
+          I enjoy turning ideas into usable digital experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html"><button class="btn">View Projects</button></a>
+          <a href="contact.html"><button class="btn btn-outline">Contact Me</button></a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>Tech stack</h3>
+        <div class="tag-list">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Git & GitHub</span>
+        </div>
+      </aside>
+    </section>
+
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Shaheen Parveen. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer and a Quick Learner'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
